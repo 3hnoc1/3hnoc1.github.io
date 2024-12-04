@@ -1,0 +1,47 @@
+*{
+	font-family: "Hanken Grotesk", sans-serif;
+}
+
+.footer_bar{
+	display: flex;
+	position: fixed; /* 確保定位相對於正常文檔流 */
+	justify-content: space-between;
+	align-items: center; /* 垂直置中 */
+	bottom: 0;
+	width: 100%;
+	background-color: #FBF8F8;
+	border-top:1px solid #000;
+	margin-top: 1rem;
+	padding: 1rem;
+	z-index: 10; /* 確保高於 canvas */
+}
+
+.time-container {
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: #000000;
+	text-align: left;
+}
+
+#button_clear{
+    border: 1pt #000 solid;
+	background-color: #e5e5e5;
+    font-size: 1rem;
+    line-height: 20px;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+}
+
+#button_clear:hover{
+	background-color: #000;
+	color:#FBF8F8;
+	transition: background-color 0.8s ease;
+}
+
+@media(max-width: 768px){
+	#button_clear{
+		visibility: hidden;
+	}
+
+}

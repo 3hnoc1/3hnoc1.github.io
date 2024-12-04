@@ -1,0 +1,85 @@
+/* 全局設定 */
+body {
+	margin: 0;
+	font-family: "Hanken Grotesk", sans-serif;
+	text-decoration: none;
+	background-color: #FBF8F8;
+}
+
+/* 整個作品區塊 */
+
+section{
+	max-width: 100vw;
+}
+
+.project-list {
+	margin: 0 auto;
+    padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3rem 0.25rem 3rem 0.75rem;
+	flex-wrap: wrap;
+	position: absolute;
+	width: 100vw;
+	padding-bottom: 5rem;
+}
+
+/* 單一作品 */
+.project-item {
+	display: flex;
+	margin: 0.25rem;
+    width: calc(33.333% - 0.75rem); /* 三格並列，減去 gap */
+	flex-direction: column; /* 圖片和標題垂直排列 */
+	align-items: left; /* 水平置中 */
+	overflow: hidden; /* 確保圖片不超出邊界 */
+}
+
+.project-item img{
+	border-radius: 0.25rem; /* 圓角 */
+	object-fit: cover;
+	height: 100%;
+}
+
+/* 圖片 */
+.project-image {
+	width: 100%; /* 圖片填滿容器 */
+	height: auto; /* 保持比例 */
+	display: block; /* 移除圖片的額外空間 */
+}
+
+/* 標題 */
+.project-title {
+	margin: 0.25rem 0;
+	font-size: 1rem;
+	font-weight: 500;
+	color:#000;
+}
+
+/*--rwd start--*/
+@media(max-width: 768px){
+	.hamburger-container {
+		visibility: visible;
+		display: block;
+	}
+
+	.subtitle ul {
+	visibility: hidden;
+	}
+
+	.project-item {
+	display: flex;
+	margin: 0.25rem;
+    width: calc(50% - 0.75rem); 
+    }
+
+}
+
+@media(max-width: 425px){
+	.project-item {
+	display: flex;
+	margin: 0.25rem;
+    width: 100%; 
+    }
+
+}
+/*--rwd end--*/

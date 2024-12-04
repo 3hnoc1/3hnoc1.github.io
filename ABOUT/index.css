@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	font-family: "Hanken Grotesk", sans-serif;
+	background-color: #FBF8F8;
+	font-size: 1rem;
+}
+
+a {
+    color: inherit; /* 繼承父元素顏色 */
+    text-decoration: none; /* 移除底線 */
+}
+
+a:hover {
+    color: #434343; /* 修改為懸停時的顏色 (可自定義) */
+    text-decoration: underline; /* 懸停時顯示底線 */
+}
+
+.wrapper{
+	width: 100vw;
+	height: 100vh;
+}
+
+.page_content {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 6rem;
+}
+
+.content-a{
+	width: 100%;
+}
+
+.content-b {
+	display: flex;
+	margin-top: 2rem;
+}
+
+.content-b-1{
+	width: 50%;
+	padding-right: 1rem; 
+}
+
+.content-b-2{
+	width: 50%;
+}
+
+.content-a h1 {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	margin: 0 0.5rem 0.5rem 0;
+}
+
+.content-a p {
+	width: 100%;
+	margin: 0 0 0.5rem 0;
+	font-size: 1rem;
+	margin: 0 0.5rem 0 0;
+	line-height: 1.5rem;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+
+.content-b-1 h1{
+	font-weight: 600;
+	margin: 0 0 0.5rem 0;
+	font-size: 1rem;
+}
+
+.content-b-1 p{
+	width: 100%;
+	margin: 0 0.5rem 0 0;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.content-b-2 h1{
+	font-weight: 600;
+	margin: 0 0 0.5rem 0;
+	font-size: 1rem;
+}
+
+.content-b-2 p{
+	width: 100%;
+	margin: 0 0.5rem 0 0;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+@media(max-width: 768px){
+	.page_content {
+	width: 80%;
+}
+
+}

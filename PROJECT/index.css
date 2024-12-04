@@ -1,0 +1,125 @@
+body {
+	margin: 0;
+	font-family: "Hanken Grotesk", sans-serif;
+	text-decoration: none;
+	background-color: #FBF8F8;
+	font-size: 1rem;
+}
+
+.bodycontent{
+	width: 64%;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.page_content{
+	margin-top: 70px;
+	width: 100%;
+	height: 100%;
+}
+
+.work_box_img {
+	margin-top: 0.5rem; 
+}
+
+.work_box_img img{
+	width: 100%; /* 圖片填滿容器 */
+	height: auto; /* 保持比例 */
+	display: block; /* 移除圖片的額外空間 */
+	border-radius: 0.25rem;
+}
+
+.work_box_text{
+	display: flex;
+}
+
+.textContainer{
+	width: 60%;
+	margin: 1.5rem 0rem;
+}
+
+.textContainer p {
+	margin: 0;
+	line-height: 1.5rem;
+}
+
+.work_box_title{
+	width: 40%;
+	margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.work_box_title h1{
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.work_box_title h2{
+	margin-top: 0.25rem;
+	font-size: 1rem;
+	font-weight: 500;
+    color: #434343;
+}
+
+.chinese p{
+	font-size:1rem;
+	line-height: 1.5rem;
+}
+
+.work_bottom_text {
+	display: flex;
+	width: 100%;
+}
+
+.work_boottom_text_left {
+	width: 30%;
+	line-height: 1.5rem;
+}
+
+.work_boottom_text_right{
+	width: 70%;
+	line-height: 1.5rem;
+}
+
+.toggle-button {
+	outline: none;
+	margin-top: 2rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem 0.25rem 0;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #434343;
+    text-decoration: underline; /* 加入文字下劃線，模仿連結 */
+    cursor: pointer; /* 保持指標樣式 */
+    border: 0px;
+}
+
+.hidden-text {
+    display: none; /* 預設隱藏文字 */
+}
+
+.textContainer[data-expanded="true"] .hidden-text {
+    display: inline; /* 展開時顯示隱藏文字 */
+}
+
+/*--rwd start--*/
+
+@media(max-width: 768px){
+	.bodycontent{
+	width: 96%;
+	}
+
+	.work_box_text{
+	display: block;
+	}
+
+	.work_box_title, .textContainer {
+	width: 100%;
+	}
+}
+
+
+/*--rwd end--*/

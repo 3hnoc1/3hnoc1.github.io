@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>3hnoc1</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="../nav_bar.css">
+		<link rel="stylesheet" type="text/css" href="../index_footer.css">
+		<meta name="description" content="王碩慈 Graphic Design">
+		<meta name="keyword" content="王碩慈 , shuoci wang">
+		<script src="../pen.js " defer></script>
+			<style>
+				canvas {
+					display: block;
+					position: absolute;
+					padding: 0;
+					margin: 0;
+					z-index: 1;
+					pointer-events: none;
+					width: 100%;
+					height: 100%;
+					}
+					.project-list {
+					position: absolute;
+					width: 100vw;
+					height: 100vh;
+					padding: 0px;
+					}
+			</style>
+
+</head>
+
+<body>
+	<!--nav_bar start-->
+	<header class="header">
+		<div class="title">
+			<a href="#">3hnoc1</a>
+		</div>
+	<div class="subtitle">
+		<ul>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">PROJECT</a></li>
+			<li><a href="#">INSIGHT</a></li>
+			<li><a href="#">INSTAGRAM</a></li>
+			<li><a href="#">BEHANCE</a></li>
+		</ul>
+	</div>
+	<!--rwd start-->
+		<input type="checkbox" id="toggler">
+		<label for="toggler">
+			<div class="hamburger-container">
+				<span></span>
+				<span></span>
+			</div>
+		</label>
+		<div class="nav-items">
+			<ul>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">PROJECT</a></li>
+				<li><a href="#">INSIGHT</a></li>
+				<li><a href="#">INSTAGRAM</a></li>
+				<li><a href="#">BEHANCE</a></li>
+			</ul>
+		</div>
+			
+		</div>
+
+		</div>
+	</header>
+	<!--nav_bar end-->
+	<!--rwd start-->
+
+	<!--rwd end-->
+	<div class="wrapper" id="container"><canvas id="c"></canvas>
+	<div class="page_content">
+		<div class="content-a">
+			<h1>Who 3hnoc1 is</h1>
+			<p>這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字，這是一串文字...</p>
+			<p>Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...</p>
+			<p>日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、日本語難しいです、</p>
+		</div>
+		<div class="content-b">
+			<div class="content-b-1">
+				<h1>Services</h1>
+				<p>Art Direction, Visual Identity, Branding, Editorial, Packaging, Posters, Typography, Web Design</p>
+			</div>
+			<div class="content-b-2">
+				<h1>Work with</h1>
+				<a href="mailto:shuoci.work@gmail.com"><p>mail:shuoci.work@gmail.com</a><br>whats app:+81 70 9075 3867<br><a href="https://www.instagram.com/3hnoc1.grid/" target="_blank">Instagram:@3hnoc1.grid</a><br>Twitter:@3hnoc1<br><a href="https://www.behance.net/q20517sc6fdc" target="_blank">Behance</a></p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--index_footer start-->
+	<header class="footer_bar">
+		<div class="time-container">(UTC+9)
+			<span id="japan-date-time">--:--:--</span>
+		</div>
+		<script src="../script-time.js"></script>
+		<button id="button_clear" onclick="clearCanvas()">clear</button>
+	</header>
+</body>

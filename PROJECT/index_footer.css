@@ -1,0 +1,64 @@
+*{
+	font-family: "Hanken Grotesk", sans-serif;
+	color: #000;
+}
+
+object{
+	width: 16px;
+	height: 16px;
+	padding-top: 0.25rem;
+}
+
+a:hover{
+	color: #434343;
+}
+
+.footer_bar{
+	display: flex;
+	position: fixed; /* 確保定位相對於正常文檔流 */
+	justify-content: space-between;
+	align-items: center; /* 垂直置中 */
+	bottom: 0;
+	width: 100%;
+	background-color: #FBF8F8;
+	border-top:1px solid #000;
+	margin-top: 1rem;
+	padding: 1rem;
+	z-index: 10; /* 確保高於 canvas */
+}
+
+.time-container {
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: #000000;
+	text-align: center;
+}
+
+.prev_poject{
+	width: 110px;
+	height: 100%;
+}
+
+.next_poject{
+	width: 120px;
+	height: 100%;
+}
+
+.prev_poject a, {
+	padding-left: 0.25rem;
+}
+
+.next_poject a{
+	padding-right: 0.25rem;
+}
+
+/*--rwd start--*/
+
+@media(max-width: 425px){
+	.time-container {
+	font-size: 1rem;
+	}
+
+}
+
+/*--rwd end--*/

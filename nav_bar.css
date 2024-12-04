@@ -1,0 +1,193 @@
+* {
+	list-style: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: "Hanken Grotesk", sans-serif;
+	text-decoration: none;
+}
+
+/*--nav_bar start--*/
+.header {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 0.25rem 1rem 0.25rem 1rem;
+	margin-bottom: 1.5rem;
+	justify-content: space-between; /* 左右分布 */
+	align-items: center;
+	background-color: #FBF8F8;
+	z-index: 1000;
+	font-size: 2rem;
+	box-sizing: border-box; /* 確保 padding 不影響寬度 */
+
+}
+
+.nav_bar {
+	width: 100%;
+}
+
+.title {
+	display: flex;
+	flex-shrink: 0; /* 不壓縮 */
+	text-align: left;
+	z-index: 11;
+}
+
+.title a{
+	margin-right: 100px;
+	color: #333;
+}
+
+.subtitle {
+	display: flex;
+	flex-grow: 1; /* 填滿剩餘空間 */
+	flex-shrink: 0; /* 不壓縮 */
+	text-align: right;
+	width: auto; /* 自適應 */
+	max-width: 100%; /* 防止超出邊界 */
+	overflow: hidden;
+}
+
+.subtitle ul {
+	display: flex;
+	justify-content: flex-end; /* 子元素間距平均 */
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 1.25rem;
+	visibility: visible;
+}
+
+.subtitle ul a {
+	color: #333;
+	transition: 10%;
+	display: block; /* 讓整個區塊可點擊 */
+	transition: background-color 0.3s ease; /* 平滑過渡效果 */
+	text-decoration: none;
+}
+
+.subtitle  ul a:hover {
+	background-color: rgba(33, 33, 33, 0.8); /* 滑鼠懸停時底色 */
+	text-decoration: none;
+}
+
+.subtitle ul li {
+	margin-left: 2rem;
+	text-decoration: none;
+}
+/*--nav_bar end--*/
+
+/*--menu bar start--*/
+.box{
+	background-color: #FBF8F8;
+	height: 40px;
+	width: 40px;
+}
+
+#toggler:checked + label .box {
+	background-color: cyan; /* 點擊變色 */
+}
+
+#toggler{
+	display: none;
+}
+
+.hamburger-container{
+	display: none;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 16px;
+	z-index: 9999;
+	visibility: visible;
+}
+
+.hamburger-container span{
+	display: block;
+	height: 1px;
+	background-color: #333;
+	position: relative;
+	transition: all .3s ease-in-out;
+	top: 0;
+	z-index: 10;
+}
+
+.nav-items {
+	background-color: rgba(33, 33, 33, 0.98);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scaleY(0);
+	transform-origin: top;
+	z-index: 10;
+	pointer-events: none; /* 禁用點擊事件，直到展開 */
+}
+
+
+
+.nav-items ul {
+	margin: auto;
+	justify-content: center; /* 垂直居中 */
+	align-items: center; /* 水平居中 */
+	height: 100%;
+	margin-top: 8rem;
+	margin-left: 1rem;
+	padding: 0;
+}
+
+.nav-items ul li{
+	margin-top: 1rem ;
+	font-size: 4rem;
+	color: #333;
+}
+
+.nav-items ul li a{
+	font-size: 4rem;
+	color: #333;
+}
+
+.nav-items ul li a:hover {
+	color: #FBF8F8; /* 滑鼠懸停時底色 */
+}
+
+.nav-items ul li a:click {
+	color: #FBF8F8; /* 滑鼠懸停時底色 */
+}
+
+.hamburger-container span:nth-child(2){
+	margin-top: 7px;
+}
+
+#toggler:checked + label .hamburger-container span:nth-child(1){
+	transform: rotate(45deg);
+	top: 4px;
+}
+
+#toggler:checked + label .hamburger-container span:nth-child(2){
+	transform: rotate(-45deg);
+	top: -4px;
+}
+
+#toggler:checked ~ .nav-items{
+	transform: scaleY(1);
+	pointer-events: auto;
+}
+
+/*--menu bar end--*/
+
+/*--rwd start--*/
+@media(max-width: 768px){
+	.hamburger-container {
+		display: block;
+		flex-shrink: 0;
+		display: block;
+	}
+
+	.subtitle {
+	display:none
+	}
+}
+/*--rwd end--*/

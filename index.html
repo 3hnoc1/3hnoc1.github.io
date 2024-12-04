@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>3hnoc1</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="nav_bar.css">
+		<link rel="stylesheet" type="text/css" href="index_footer.css">
+		<link href="HankenGrotesk-VariableFont_wght.ttf" rel="stylesheet">
+		<meta name="description" content="王碩慈 Graphic Design">
+		<meta name="keyword" content="王碩慈 , shuoci wang">
+		<script src="pen.js" defer></script>
+			<style>
+				canvas {
+					display: block;
+					position: absolute;
+					padding: 0;
+					margin: 0;
+					z-index: 1;
+					pointer-events: none;
+					width: 100%;
+					height: 100%;
+					}
+			</style>
+
+</head>
+
+<body>
+	<!--nav_bar start-->
+	<header class="header">
+		<div class="title">
+			<a href="#">3hnoc1</a>
+		</div>
+	<div class="subtitle">
+		<ul>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">PROJECT</a></li>
+			<li>INSIGHT</li>
+			<li><a href="https://www.instagram.com/3hnoc1.grid/" target="_blank">INSTAGRAM</a></li>
+			<li><a href="https://www.behance.net/q20517sc6fdc" target="_blank">BEHANCE</a></li>
+		</ul>
+	</div>
+	<!--rwd start-->
+		<input type="checkbox" id="toggler" class="toggler">
+		<label for="toggler">
+			<div class="hamburger-container">
+				<span></span>
+				<span></span>
+			</div>
+		</label>
+		<div class="nav-items">
+			<ul>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">PROJECT</a></li>
+				<li>INSIGHT</li>
+				<li><a href="https://www.instagram.com/3hnoc1.grid/" target="_blank">INSTAGRAM</a></li>
+				<li><a href="ttps://www.behance.net/q20517sc6fdc" target="_blank">BEHANCE</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--nav_bar end-->
+	<!--rwd start-->
+
+	<!--rwd end-->
+
+	<section class="project-list" id="container"><canvas id="c"></canvas>
+		<a href="https://3hnoc1/projects/what-is-nas" class="project-item">
+			<img src="img/thumbail_whatisnas.jpg" alt="Project 1" class="project-image">
+			<h3 class="project-title">What is Nas</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+		<a href="https://riceset.com" class="project-item">
+			<img src="https://via.placeholder.com/400x300" alt="Project 1" class="project-image">
+			<h3 class="project-title">Project 1</h3>
+		</a>
+	</section>
+
+	<!--index_footer start-->
+	<header class="footer_bar">
+		<div class="time-container">(UTC+9)
+			<span id="japan-date-time">--:--:--</span>
+		</div>
+		<script src="script-time.js"></script>
+		<button id="button_clear" onclick="clearCanvas()">clear</button>
+	</header>
+</body>
