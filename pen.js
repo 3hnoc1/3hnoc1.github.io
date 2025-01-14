@@ -62,7 +62,7 @@ function drawStuff() {
       // set line color
       // ctx.strokeStyle = '#FF391F';
       ctx.strokeStyle = 'rgba(33, 33, 33, 1)';
-      ctx.lineWidth = 50;
+      ctx.lineWidth = 30;
       ctx.beginPath();
       path.pts.forEach(pt => ctx.lineTo(pt.x, pt.y));
       ctx.stroke();

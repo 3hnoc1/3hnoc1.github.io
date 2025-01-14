@@ -20,10 +20,27 @@ a:hover {
 	height: 100vh;
 }
 
-.page_content {
+.my{
+	width: 70%;
+	margin-right: 2rem;
+}
+
+.content-text {
 	width: 50%;
+}
+
+.my img {
+	width: 100%; /* 圖片填滿容器 */
+	height: auto; /* 保持比例 */
+	display: block; /* 移除圖片的額外空間 */
+}
+
+.page_content {
+	width: 70%;
 	margin: 0 auto;
 	margin-top: 6rem;
+	display: flex;
+	padding-bottom: 5rem;
 }
 
 .content-a{
@@ -87,9 +104,29 @@ a:hover {
 	line-height: 1.5rem;
 }
 
+.my img {
+	width: 100%; /* 圖片填滿容器 */
+	height: auto; /* 保持比例 */
+	display: block; /* 移除圖片的額外空間 */
+}
+
 @media(max-width: 768px){
 	.page_content {
 	width: 80%;
-}
+	}
+
+	.page_content {
+	display: block;
+	}
+
+	.my{
+	width: 100%;
+	margin-bottom: 2rem;
+	}
+
+	.content-text {
+	width: 100%;
+	}
+
 
 }
